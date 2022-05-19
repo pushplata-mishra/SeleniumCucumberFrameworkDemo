@@ -7,11 +7,4 @@
 			</class>
 		</classes>
 	</test>
-	<test name="Testing on Firefox">
-	 <parameter name="browser" value="firefox"/>
-		<classes>
-			<class name="runner.TestRunnerCucumber">
-			</class>
-		</classes>
-	</test>
 </suite>

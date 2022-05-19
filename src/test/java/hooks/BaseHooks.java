@@ -18,6 +18,7 @@ public class BaseHooks {
 	private WebDriver driver;
 	Properties properties;
 
+	//launch browser
 	@Before(order = 0)
 	public void launchBrowser() throws Exception {
 		String browserName = ConfigReader.getBrowser();
@@ -26,18 +27,20 @@ public class BaseHooks {
 		
 	}
 
+	//close browser
 	@After(order = 0)
 	public void closeBrowser() {
 		driver.close();
 	}
 
+	//take screenshots
 	@After(order = 1)
-	public void tearDown(Scenario sc) {
+	public void takeScreenshot(Scenario sc) {
 		if (sc.isFailed()) {
 			String screenshotName = sc.getName().replaceAll(" ", "_");
-			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-			sc.attach(sourcePath, "image/png", screenshotName);
-
+			TakesScreenshot shot=(TakesScreenshot)driver;
+            byte[] srcFile = shot.getScreenshotAs(OutputType.BYTES);
+			sc.attach(srcFile, "image/png", " Screenshot" + "/" +  screenshotName);
 		}
 		
 	}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 18 10:47:27 CEST 2022</td>
+<td>Started on:</td><td>Thu May 19 14:45:57 CEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137605 ms)</td>
+<tr><td>Total time:</td><td>122 seconds (122741 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,212 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place order for first product", "Optional[Purchase first product]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d689fcb2bc676464c5682ee24e17af73, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64427/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d689fcb2bc676464c5682ee24e17af73
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2070003473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2070003473'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d689fcb2bc676464c5682ee24e17af73, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64427/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d689fcb2bc676464c5682ee24e17af73
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
+</pre></div></td>
+<td>2</td>
+<td>runner.TestRunnerCucumber@15bfd87</td></tr>
+<tr>
+<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify title of Login page", "Optional[Verify Login Page Scenarios]"</td>
+<td><div><pre>java.lang.AssertionError: expected [Login - My Store] but found [508 Resource Limit Is Reached]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.LoginPage.verifyPageTitle(LoginPage.java:28)
+	at steps.LoginPageSteps.page_title_should_be_same_as_login_page(LoginPageSteps.java:33)
+	at ?.page title should be same as login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/LoginPage.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1250956357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1250956357'><pre>java.lang.AssertionError: expected [Login - My Store] but found [508 Resource Limit Is Reached]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.LoginPage.verifyPageTitle(LoginPage.java:28)
+	at steps.LoginPageSteps.page_title_should_be_same_as_login_page(LoginPageSteps.java:33)
+	at ?.page title should be same as login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/LoginPage.feature:16)
+</pre></div></td>
+<td>16</td>
+<td>runner.TestRunnerCucumber@15bfd87</td></tr>
+<tr>
+<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe to the newsletter", "Optional[Subscribe to the newsletter]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bc058e0adbc2ce8612d1179ca7e3e52, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc058e0adbc2ce8612d1179ca7e3e52
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/NewsLetter.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1700751834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1700751834'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bc058e0adbc2ce8612d1179ca7e3e52, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc058e0adbc2ce8612d1179ca7e3e52
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/NewsLetter.feature:7)
+</pre></div></td>
+<td>2</td>
+<td>runner.TestRunnerCucumber@15bfd87</td></tr>
+<tr>
+<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place order for casual dress", "Optional[Purchase first product]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [411cfb1e0e37e8fca80d42056348de5d, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 411cfb1e0e37e8fca80d42056348de5d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:21)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1848760713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848760713'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-J6M0BK6&apos;, ip: &apos;192.168.178.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [411cfb1e0e37e8fca80d42056348de5d, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 411cfb1e0e37e8fca80d42056348de5d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:21)
+	at ?.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestRunnerCucumber@15bfd87</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,24 +281,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place order for first product", "Optional[Purchase first product]"</td>
+<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Contact Customer Care for Product Inquiry", "Optional[Contact Customer Care for Product Inquiry]"</td>
 <td></td>
-<td>94</td>
-<td>runner.TestRunnerCucumber@15bfd87</td></tr>
-<tr>
-<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Contact Customer Care for Product Inquiry", "Optional[Purchase first product]"</td>
-<td></td>
-<td>12</td>
+<td>58</td>
 <td>runner.TestRunnerCucumber@15bfd87</td></tr>
 <tr>
 <td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to site with valid username and valid password", "Optional[Verify Login Page Scenarios]"</td>
 <td></td>
-<td>19</td>
-<td>runner.TestRunnerCucumber@15bfd87</td></tr>
-<tr>
-<td title='runner.TestRunnerCucumber.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify title of Login page", "Optional[Verify Login Page Scenarios]"</td>
-<td></td>
-<td>7</td>
+<td>31</td>
 <td>runner.TestRunnerCucumber@15bfd87</td></tr>
 </table><p>
 </body>

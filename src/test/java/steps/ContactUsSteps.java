@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.ContactUsPage;
 
+//step definition file for contact us
 public class ContactUsSteps {
 	
 	private ContactUsPage contactPage = new ContactUsPage(DriverFactory.driver());

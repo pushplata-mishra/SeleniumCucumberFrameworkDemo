@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 import pages.LoginPage;
 import util.ConfigReader;
 
+//step definition file for login page
 public class LoginPageSteps {
 	
 	private static String actualTitle;

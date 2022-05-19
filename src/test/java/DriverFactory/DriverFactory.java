@@ -14,6 +14,7 @@ public class DriverFactory {
 
 	public static ThreadLocal<WebDriver> localDriver = new ThreadLocal<WebDriver>();
 	
+	//method to initiate web drivers
 	public WebDriver init_driver(String browser) {
 		
 		if(browser.equals("chrome")) {

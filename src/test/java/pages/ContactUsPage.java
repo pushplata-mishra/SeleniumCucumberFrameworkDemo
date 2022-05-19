@@ -22,6 +22,7 @@ public class ContactUsPage {
 		this.driver = driver;
 	}
 	
+	//select class example - for dropdown
 	public void selectHeading(String subject) {
 		Select heading = new Select(driver.findElement(subjectHeading));
 		heading.selectByVisibleText(subject);
@@ -40,8 +41,9 @@ public class ContactUsPage {
 		driver.findElement(sendBtn).click();	
 	}
 	
+	//Assertion
 	public void verifyContactMessage() {
-		contactUsMessage = driver.findElement(contactMessage).getText();
+		contactUsMessage = driver.findElement(contactMessage).getText().trim();
 		Assert.assertEquals(contactUsMessage, ConstantUtils.CONTACTUSMESSAGE, "Not Matched");
 	}
 		

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="234.229">
-<testcase classname="Contact Customer Care for Product Inquiry" name="Contact Customer Care for Product Inquiry" time="51.243">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="119.884">
+<testcase classname="Contact Customer Care for Product Inquiry" name="Contact Customer Care for Product Inquiry" time="58.174">
 <system-out><![CDATA[Given user opens login page.................................................passed
 When user enters valid username and password................................passed
 And user clicks on Login button.............................................passed
@@ -9,7 +9,7 @@ When user enters "Customer service","435837","for testing purpose" and send mess
 Then message should be sent to customer care................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verify Login Page Scenarios" name="Login to site with valid username and valid password" time="42.534">
+<testcase classname="Verify Login Page Scenarios" name="Login to site with valid username and valid password" time="31.862">
 <system-out><![CDATA[Given user opens login page.................................................passed
 When user enters valid username and password................................passed
 And user clicks on Login button.............................................passed
@@ -17,35 +17,43 @@ Then user extracts the title of the page....................................pass
 And page title should be same as home page..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verify Login Page Scenarios" name="Verify title of Login page" time="28.685">
-<system-out><![CDATA[Given user opens login page.................................................passed
+<testcase classname="Verify Login Page Scenarios" name="Verify title of Login page" time="16.235">
+<failure message="expected [Login - My Store] but found [508 Resource Limit Is Reached]" type="java.lang.AssertionError"><![CDATA[Given user opens login page.................................................passed
 When user extracts the title of the page....................................passed
-Then page title should be same as login page................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Purchase first product" name="Place order for first product" time="111.466">
-<failure message="chrome not reachable&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [629b99bde25336740d2676ffff1c670f, findElement {using=xpath, value=//*[@id=&quot;center_column&quot;]/p[2]/a[1]/span}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52917/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 629b99bde25336740d2676ffff1c670f" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user opens login page.................................................passed
-When user enters valid username and password................................passed
-And user clicks on Login button.............................................passed
-Then user clicks on header logo.............................................passed
-When user selects first product.............................................passed
-And user adds product to cart...............................................failed
-And user pays by bank wire..................................................skipped
-Then order of selected product should be completed..........................skipped
+Then page title should be same as login page................................failed
 
 StackTrace:
-org.openqa.selenium.WebDriverException: chrome not reachable
+java.lang.AssertionError: expected [Login - My Store] but found [508 Resource Limit Is Reached]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.LoginPage.verifyPageTitle(LoginPage.java:28)
+	at steps.LoginPageSteps.page_title_should_be_same_as_login_page(LoginPageSteps.java:33)
+	at ✽.page title should be same as login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/LoginPage.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="Subscribe to the newsletter" name="Subscribe to the newsletter" time="2.248">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2bc058e0adbc2ce8612d1179ca7e3e52, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2bc058e0adbc2ce8612d1179ca7e3e52" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user opens login page.................................................failed
+When user enters email id on news letter and submit.........................skipped
+Then user should get successful message of subscription.....................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[2]/div/div/nav/div[1]/a"}
   (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [629b99bde25336740d2676ffff1c670f, findElement {using=xpath, value=//*[@id="center_column"]/p[2]/a[1]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52917/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 629b99bde25336740d2676ffff1c670f
+Command: [2bc058e0adbc2ce8612d1179ca7e3e52, findElement {using=xpath, value=//*[@id="header"]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64408/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc058e0adbc2ce8612d1179ca7e3e52
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -57,12 +65,85 @@ Session ID: 629b99bde25336740d2676ffff1c670f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at pages.PlaceOrderPage.addProductToCart(PlaceOrderPage.java:46)
-	at steps.PlaceOrderSteps.user_adds_product_to_cart(PlaceOrderSteps.java:19)
-	at ✽.user adds product to cart(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:14)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ✽.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/NewsLetter.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Purchase first product" name="Place order for first product" time="2.225">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d689fcb2bc676464c5682ee24e17af73, findElement {using=xpath, value=//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64427/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d689fcb2bc676464c5682ee24e17af73" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user opens login page.................................................failed
+When user enters valid username and password................................skipped
+And user clicks on Login button.............................................skipped
+Then user clicks on header logo.............................................skipped
+When user selects first product.............................................skipped
+And user adds product to cart...............................................skipped
+And user pays by bank wire..................................................skipped
+Then order of selected product should be completed by bank wire.............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div[2]/div/div/nav/div[1]/a"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d689fcb2bc676464c5682ee24e17af73, findElement {using=xpath, value=//*[@id="header"]/div[2]/div/div/nav/div[1]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64427/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d689fcb2bc676464c5682ee24e17af73
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at pages.LoginPage.getLoginPage(LoginPage.java:40)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:22)
+	at ✽.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Purchase first product" name="Place order for casual dress" time="8.723">
+<failure message="unknown error: cannot determine loading status&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [411cfb1e0e37e8fca80d42056348de5d, get {url=http://automationpractice.com/index.php}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 411cfb1e0e37e8fca80d42056348de5d" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user opens login page.................................................failed
+When user enters valid username and password................................skipped
+And user clicks on Login button.............................................skipped
+Then user clicks on header logo.............................................skipped
+When user selects casual dress product......................................skipped
+And user adds product to cart...............................................skipped
+And user pays by check......................................................skipped
+Then order of selected product should be completed by check.................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [411cfb1e0e37e8fca80d42056348de5d, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64446/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 411cfb1e0e37e8fca80d42056348de5d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at steps.LoginPageSteps.user_opens_login_page(LoginPageSteps.java:21)
+	at ✽.user opens login page(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:7)
 ]]></failure>
 </testcase>
 </testsuite>
