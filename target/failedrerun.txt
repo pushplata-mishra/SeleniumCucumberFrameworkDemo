@@ -1,3 +1,0 @@
-file:src/test/resources/features/NewsLetter.feature:6
-file:src/test/resources/features/LoginPage.feature:14
-file:src/test/resources/features/PlaceOrder.feature:13:20

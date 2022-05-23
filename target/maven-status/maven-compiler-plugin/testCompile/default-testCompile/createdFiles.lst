@@ -1,3 +1,14 @@
+runner\FailedRunnerTestCucumber.class
 pages\LoginPage.class
+steps\PlaceOrderSteps.class
+DriverFactory\DriverFactory.class
+hooks\BaseHooks.class
+pages\ContactUsPage.class
+pages\NewsLetterPage.class
+steps\LoginPageSteps.class
+runner\TestRunnerCucumber.class
 environment\testdata\ConstantUtils.class
+steps\ContactUsSteps.class
+pages\PlaceOrderPage.class
 util\ConfigReader.class
+steps\NewsLetterSteps.class

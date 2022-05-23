@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="237648" started-at="2022-05-18T13:50:19 CEST" finished-at="2022-05-18T13:54:17 CEST">
+  <suite name="My Demo Project" duration-ms="99063" started-at="2022-05-22T12:46:39 CEST" finished-at="2022-05-22T12:48:18 CEST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="237648" started-at="2022-05-18T13:50:19 CEST" finished-at="2022-05-18T13:54:17 CEST">
+    <test name="Testing on Chrome" duration-ms="99063" started-at="2022-05-22T12:46:39 CEST" finished-at="2022-05-22T12:48:18 CEST">
       <class name="runner.TestRunnerCucumber">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="setUpClass" is-config="true" duration-ms="719" started-at="2022-05-18T13:50:19 CEST" finished-at="2022-05-18T13:50:20 CEST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="setUpClass" is-config="true" duration-ms="783" started-at="2022-05-22T12:46:39 CEST" finished-at="2022-05-22T12:46:40 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@595f9916]]>
+                <![CDATA[org.testng.TestRunner@53ea380b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="runScenario" duration-ms="51354" started-at="2022-05-18T13:50:20 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T13:51:11 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="19883" started-at="2022-05-22T12:46:40 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:47:00 CEST">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="runScenario" duration-ms="42555" started-at="2022-05-18T13:51:11 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T13:51:54 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="10295" started-at="2022-05-22T12:47:00 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:47:10 CEST">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="runScenario" duration-ms="28710" started-at="2022-05-18T13:51:54 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T13:52:23 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="8524" started-at="2022-05-22T12:47:10 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:47:19 CEST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="runScenario" duration-ms="111497" started-at="2022-05-18T13:52:23 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T13:54:14 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="9883" started-at="2022-05-22T12:47:19 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:47:29 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Subscribe to the newsletter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Subscribe to the newsletter]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="22523" started-at="2022-05-22T12:47:29 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:47:51 CEST">
           <params>
             <param index="0">
               <value>
@@ -82,58 +98,30 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=101.0.4951.67)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [629b99bde25336740d2676ffff1c670f, findElement {using=xpath, value=//*[@id="center_column"]/p[2]/a[1]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52917/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 629b99bde25336740d2676ffff1c670f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=101.0.4951.67)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-J6M0BK6', ip: '192.168.178.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [629b99bde25336740d2676ffff1c670f, findElement {using=xpath, value=//*[@id="center_column"]/p[2]/a[1]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52917/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 629b99bde25336740d2676ffff1c670f
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at pages.PlaceOrderPage.addProductToCart(PlaceOrderPage.java:46)
-at steps.PlaceOrderSteps.user_adds_product_to_cart(PlaceOrderSteps.java:19)
-at ✽.user adds product to cart(file:///C:/Users/hp/eclipse-workspace/qa-web/src/test/resources/features/PlaceOrder.feature:14)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunnerCucumber@13eb8acf]" name="tearDownClass" is-config="true" duration-ms="2774" started-at="2022-05-18T13:54:14 CEST" finished-at="2022-05-18T13:54:17 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="runScenario" duration-ms="24427" started-at="2022-05-22T12:47:51 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-22T12:48:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place order for casual dress"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Purchase first product]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunnerCucumber@365185bd]" name="tearDownClass" is-config="true" duration-ms="2708" started-at="2022-05-22T12:48:16 CEST" finished-at="2022-05-22T12:48:18 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.TestRunnerCucumber -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Testing on Chrome -->
+  </suite> <!-- My Demo Project -->
 </testng-results>
